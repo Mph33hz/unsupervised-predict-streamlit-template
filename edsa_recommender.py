@@ -126,12 +126,19 @@ def main():
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Solution Overview":
-        st.title("Solution Overview")
+        title_SO = """
+	    <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;border-style:solid; border-color:#000000; padding: 1em;">
+	    <h1 style="color:black;text-align:center;">Solution Overview</h1>
+        """
+        st.markdown(title_SO, unsafe_allow_html=True)
+        #st.title("Solution Overview")
         st.image('resources/imgs/sol.jpeg',use_column_width=True)
         st.write("Describe your winning approach on this page")
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
+
+    # Home
     if page_selection == "Home":
         st.image('resources/imgs/EDSA_logo.png',use_column_width=True)
 
@@ -151,7 +158,15 @@ def main():
         st.markdown(html_temp.format('#D2691E00','black'), unsafe_allow_html=True)
         st.markdown(title_temp, unsafe_allow_html=True)
     
+
+    # EDA
     if page_selection == "Exploratory Data Analysis(EDA)":
+        title_eda = """
+	    <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;border-style:solid; border-color:#000000; padding: 1em;">
+	    <h1 style="color:black;text-align:center;">Exploratory Data Analysis(EDA)</h1>
+        """
+        st.markdown(title_eda, unsafe_allow_html=True)
+
         st.image('resources/imgs/EDA6.png',use_column_width=True)
 
 
