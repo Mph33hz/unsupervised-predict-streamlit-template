@@ -70,7 +70,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview"]
+    page_options = ["Home","Exploratory Data Analysis(EDA)","Recommender System","Solution Overview","About"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -132,6 +132,28 @@ def main():
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
+    if page_selection == "Home":
+        st.image('resources/imgs/EDSA_logo.png',use_column_width=True)
+
+        html_temp = """
+	    <div style="background-color:{};padding:10px;border-radius:10px;margin:10px;border:3px; border-style:solid; border-color:#000000; padding: 1em;">
+	    <h1 style="color:{};text-align:center;">UNSUPERVISED PREDICT</h1>
+	    </div>
+	    """
+        
+        title_temp = """
+	    <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;border-style:solid; border-color:#000000; padding: 1em;">
+	    <h1 style="color:black;text-align:center;">Recommender System</h1>
+	    <h2 style="color:black;text-align:center;">Team:3</h2>
+	    <h2 style="color:black;text-align:center;">July 2020</h3>
+	    </div>
+	    """
+        st.markdown(html_temp.format('#D2691E00','black'), unsafe_allow_html=True)
+        st.markdown(title_temp, unsafe_allow_html=True)
+    
+    if page_selection == "Exploratory Data Analysis(EDA)":
+        st.image('resources/imgs/EDA6.png',use_column_width=True)
+
 
 
 if __name__ == '__main__':
