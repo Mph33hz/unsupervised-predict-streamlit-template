@@ -70,6 +70,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
+    st.sidebar.title("Pages")
     page_options = ["Home","Exploratory Data Analysis(EDA)","Recommender System","Solution Overview","About"]
 
     # -------------------------------------------------------------------
@@ -168,6 +169,31 @@ def main():
         st.markdown(title_eda, unsafe_allow_html=True)
 
         st.image('resources/imgs/EDA6.png',use_column_width=True)
+    
+    #About
+    if page_selection == "About":
+        title_about = """
+	    <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
+	    <h1 style="color:black;text-align:center;"> - The Team -</h1>
+        <h3 style="color:black;text-align:right;">We are a team of data science students from Explore Data Science Academy. This is our project for the 2020 July unsupervised sprint.</h3>
+        """
+        mission = """
+	    <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;border-style:solid; border-color:#000000; padding: 1em;">
+	    <h1 style="color:black;text-align:center;"> - Our Mission - </h1>
+        <h3 style="color:black;text-align:center;">To keep you entertained by helping you find movies you're most likely to enjoy&#128515</h3>
+        """
+        contributors = """
+        <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
+	    <h1 style="color:black;text-align:center;"> - Contributors -</h1>
+        <h3 style="color:black;text-align:center;">Thapelo Mojela</h3>
+        <h3 style="color:black;text-align:center;">Presca Mashamaite</h3>
+        <h3 style="color:black;text-align:center;">Mpho Mokhokane</h3>
+        <h3 style="color:black;text-align:center;">Josias Sekhebesa</h3>
+        <h3 style="color:black;text-align:center;">Bukelwa Mqhamane</h3>
+        """
+        st.markdown(title_about, unsafe_allow_html=True)
+        st.markdown(mission, unsafe_allow_html=True)
+        st.markdown(contributors, unsafe_allow_html=True)
 
 
 
