@@ -178,7 +178,7 @@ def main():
         <h3 style="color:black;text-align:right;">We are a team of data science students from Explore Data Science Academy. This is our project for the 2020 July unsupervised sprint.</h3>
         """
         mission = """
-	    <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;border-style:solid; border-color:#000000; padding: 1em;">
+	    <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
 	    <h1 style="color:black;text-align:center;"> - Our Mission - </h1>
         <h3 style="color:black;text-align:center;">To keep you entertained by helping you find movies you're most likely to enjoy&#128515</h3>
         """
