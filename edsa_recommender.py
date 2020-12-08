@@ -60,7 +60,7 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
 
-set_png_as_page_bg('resources/imgs/Back4.jpg')
+set_png_as_page_bg('resources/imgs/Back8.jpg')
 
 # Data Loading
 title_list = load_movie_titles('resources/data/movies.csv')
