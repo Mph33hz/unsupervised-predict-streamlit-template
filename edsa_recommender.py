@@ -60,7 +60,7 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
 
-set_png_as_page_bg('resources/imgs/Back8.jpg')
+set_png_as_page_bg('resources/imgs/Back7.jpg')
 
 # Data Loading
 title_list = load_movie_titles('resources/data/movies.csv')
@@ -71,7 +71,7 @@ def main():
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
     st.sidebar.title("Pages")
-    page_options = ["Home","Exploratory Data Analysis(EDA)","Recommender System","Solution Overview","About"]
+    page_options = ["Home","Exploratory Data Analysis(EDA)","Recommender System","Solution Overview","Business Pitch","About"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -277,6 +277,7 @@ def main():
 	    <h1 style="color:black;text-align:center;"> - Our Mission - </h1>
         <h3 style="color:black;text-align:center;">To keep you entertained by helping you find movies you're most likely to enjoy&#128515</h3>
         """
+
         contributors = """
         <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
 	    <h1 style="color:black;text-align:center;"> - Contributors -</h1>
@@ -289,6 +290,18 @@ def main():
         st.markdown(title_about, unsafe_allow_html=True)
         st.markdown(mission, unsafe_allow_html=True)
         st.markdown(contributors, unsafe_allow_html=True)
+
+    if page_selection == "Business Pitch":
+        st.image('resources/imgs/BV_1.jpg',use_column_width=True)
+        st.write("Some of the biggest companies in the world invested in streaming entertainment in the 21st century. The investment in streaming entertainment gave us platforms such as Netflix, Apple TV,, Disney Plus, Amazon prime and many more. These platforms are racking up millions of subscribers as the entire world is now streaming more than ever.")
+        st.write("You may be wondering why these streaming platforms are attracting millions of subscribers, there are several reasons why people are leaning more towards streaming platforms. Streaming platforms have a lot of diverse content that can be consumed anywhere, anytime, and the subscribers are in total control of the rate at which they consume the content.")
+        st.image('resources/imgs/BV_2.jpg',use_column_width=True)
+        st.write("Another thing that is a major contributor in the rise and success of streaming platforms is their ability to recommend content that their users are most likely to watch and enjoy. They achieve this through the use of recommender algorithms. These algorithms ensure that each user is exposed to what they like.")
+        st.image('resources/imgs/increasing.jpg',use_column_width=True)
+        st.write("When doing exploratory data analysis we saw that the number of movies released increases exponentially each year. The exponential increase in the number of movies released means that streaming platforms need an excellent recommender algorithm to ensure that the movies reach the right audience.")
+        st.image('resources/imgs/BV_L.jpg',use_column_width=True)
+        st.write("This is where our recommender algorithm comes in. Our recommender algorithm will help with user retention by making tailored recommendations for each user. The user retention will ultimately result in a growth of the platform.")
+
 
 
 
