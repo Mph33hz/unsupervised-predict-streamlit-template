@@ -206,7 +206,7 @@ def main():
             #options_ratings = ["Top 10 users by number of ratings","Top 10 users by number of ratings(No outlier)","Rating distribution"]
             #rating_option = st.selectbox("Choose Option", options_ratings)
 
-            op_ratings = st.radio("Choose",("Top 10 users by number of ratings","Top 10 users by number of ratings(No outlier)","Rating distribution"))
+            op_ratings = st.radio("Choose an option under ratings",("Top 10 users by number of ratings","Top 10 users by number of ratings(No outlier)","Rating distribution"))
 
             if op_ratings == "Top 10 users by number of ratings":
                 #if rating_option == "Top 10 users by number of ratings":
@@ -227,7 +227,7 @@ def main():
 
         if sys_eda == "Movies":
         #if option_selection == "Movies":
-            op_movies = st.radio("Choose",("Top 25 most rated movies of all time","25  most rated movies of the 21st century","Top 10 best and worst rated movies with over 10000 ratings","Total movies released per year"))
+            op_movies = st.radio("Choose an option under movies",("Top 25 most rated movies of all time","25  most rated movies of the 21st century","Top 10 best and worst rated movies with over 10000 ratings","Total movies released per year"))
             #option_movie = ["Top 25 most rated movies of all time","25  most rated movies of the 21st century","Top 10 best and worst rated movies with over 10000 ratings","Total movies released per year"]
             #movie_option = st.selectbox("Choose Option", option_movie)
             if op_movies == "Top 25 most rated movies of all time":
@@ -252,7 +252,7 @@ def main():
         #if option_selection == "Directors":
             st.info("We start off with directors, A film director controls a film's artistic and dramatic aspects and visualizes the screenplay (or script) while guiding the technical crew and actors in the fulfilment of that vision. The director has a key role in choosing the cast members, production design and all the creative aspects of filmmaking\n\n\n\nEven though most people don't into finding our who director what movie to decide whether its going to be a good watch or not, there is a proportion of people that either watch the credits at the end of the movie or do research of each movie before they watch it, for these people director of a movie plays an import role in decided whether or not to watch a movie, for me personally I watch mroe series's than movies and but I know that if a series is directed by Chuck Lorre than I will definately love it.\n\nlet's start by finding our which directors have recieved the most number of ratings for their collective movies")
             
-            op_director = st.radio("Choose",("Top 25 most rated directors","Top 25 directors with most number of movies","10 highest rated director with over 10000 ratings","10 worst rated directors with over 10000 ratings"))
+            op_director = st.radio("Choose an option under directors",("Top 25 most rated directors","Top 25 directors with most number of movies","10 highest rated director with over 10000 ratings","10 worst rated directors with over 10000 ratings"))
             #option_directors = ["Top 25 most rated directors","Top 25 directors with most number of movies","10 highest rated director with over 10000 ratings","10 worst rated directors with over 10000 ratings"]
             #director_option = st.selectbox("Choose option", option_directors)
             if op_director == "Top 25 most rated directors":
@@ -272,7 +272,7 @@ def main():
         
         if sys_eda == "Genres":
         #if option_selection == "Genres":
-            op_genre = st.radio("Choose",("Treemap of movie genres","Genre average rating over the years","Word cloud of movie genres"))
+            op_genre = st.radio("Choose an option under Genres",("Treemap of movie genres","Genre average rating over the years","Word cloud of movie genres"))
             #options_genres = ["Treemap of movie genres","Genre average rating over the years","Word cloud of movie genres"]
             #genre_options = st.selectbox('Choose option', options_genres)
             if op_genre == "Treemap of movie genres":
