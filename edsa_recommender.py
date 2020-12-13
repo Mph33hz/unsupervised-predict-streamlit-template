@@ -144,6 +144,7 @@ def main():
         st.write("test - The test split of the dataset. Contains user and movie IDs with no rating data")
         st.write("train - The training split of the dataset. Contains user and movie IDs with associated rating data")
         st.write("The initial step was the data preprocessing and we looked for missing values. We discovered that there are missing values in three of the eight datasets we have.")
+        st.write("After data preprocessing we started building our based model. We built five different collaborative base models, namely SVD, Normal Predictor, CoClustering, KNN Baseline, and lastly NMF. Their performances were compared using a statistical measure known as the root mean square error (RMSE), which determines the average squared difference between the estimated values and the actual value. A low RMSE value indicates a high model accuracy. The best performing base models were SVD and KNN Baseline.\n\nWe performed hyperparameter tuning on SVD and it gave us the best result of Kaggle.")
 
         imdb = """
 	    <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
