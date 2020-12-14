@@ -124,6 +124,7 @@ def collab_model(movie_list,top_n=10):
     """
     #Create pivot table
     matrix = df_merged.pivot_table(index=['title'],columns=['userId'],values='rating')
+    #Normalise each row
     matrix_norm = matrix.apply(lambda i: (i-np.mean(i))/(np.max(i)-np.min(i)), axis = 1)
     
     # Fill missing values with zeros
@@ -177,4 +178,3 @@ def collab_model(movie_list,top_n=10):
         recommended_movies = recommended_movies[~(recommended_movies['title'].isin(movie_list))]
         recommended_movies=list(recommended_movies[0:top_n]['title'])
     return recommended_movies
-    
