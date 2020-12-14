@@ -133,7 +133,7 @@ def main():
         """
         st.markdown(title_SO, unsafe_allow_html=True)
         #st.title("Solution Overview")
-        st.image('resources/imgs/sol.jpeg',use_column_width=True)
+        st.image('resources/imgs/Sol.jpeg',use_column_width=True)
         st.write("Describe your winning approach on this page")
         st.write("Our objective was to construct a recommendation algorithm based on the content or collaborative filtering, capable of accurately predicting how a user will rate a movie they have not yet viewed based on their historical preferences. We used a special version of the MovieLens dataset. Below is a description of the dataset we used")
         st.write("genome_scores - a score mapping the strength between movies and tag-related properties")
